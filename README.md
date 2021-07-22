@@ -1,5 +1,32 @@
 我把这份代码改成了Runtime动态读取datasmith的数据加载到unity运行时场景，但是有BUG，坐标乱了~~~~~
 
+    ```CSharp
+public class Main : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        var file = @"C:\Users\money\3D Objects\简单六面体.udatasmith";
+        //file = @"C:\Users\money\3D Objects\AutoSave_模型_2.udatasmith";  
+        file = @"C:\Users\money\3D Objects\xx35_haveTop.udatasmith";
+        var g = new UDatasmithImporter().LoadModel(file);
+        g.transform.SetParent(this.transform);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
+
+    ```
+
+
+
+
+
+
 
 # UnityDatasmithImporter
 
