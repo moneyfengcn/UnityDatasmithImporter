@@ -1,3 +1,6 @@
+我把这份代码改成了Runtime动态读取datasmith的数据加载到unity运行时场景，但是有BUG，坐标乱了~~~~~
+
+
 # UnityDatasmithImporter
 
 ### About
